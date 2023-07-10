@@ -7,7 +7,7 @@
  *
  * Return: number of words
  */
-int countword(char *s)
+int count_word(char *s)
 {
 	int flag, d, w;
 
@@ -41,7 +41,7 @@ char **strtow(char *str)
 
 	while (*(str + len))
 		len++;
-	words = countword(str);
+	words = count_word(str);
 	if (words == 0)
 		return (NULL);
 
